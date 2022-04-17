@@ -98,7 +98,14 @@ Hypothesis: Regardless of the luxury features and style of vehicles being market
 Null Hypothesis: There is no statistically significant correlation between the number of vehicles sold in a given year and vehicle model, and that model's cost or city fuel efficiency.
 
 **What statistical test would you use to test the hypothesis? And why?**
+To test the hypothesis, the following tests would need to be performed:
+- paired two-sample t-tests (will help define the variablility between the vehicle cost and city fuel efficiency of various models)
+- 2-way analysis of variance (to measure the variance between the independent variables of cost and city fuel efficiency and the dependent variable of number of models sold in a year)
+- linear regressions (show and predict how cost and city fuel efficiency designs should be adjusted to meet the sales goals for the MechaCars)
 
 **What data is needed to run the statistical test?**
-
+The data that would be needed would be:
+- the total vehicles sold grouped by model for the previous year. To limit the dataset MechaCars may want to look at only vehicle classes comprable to their models.
+- the city fuel efficiency ratings of each model of vehicle
+- the cost or sales price of each model sold
 
