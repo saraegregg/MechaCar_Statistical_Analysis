@@ -59,6 +59,7 @@ This linear model effectively predicts the mpg of MechaCar prototypes. With a Co
 
 **The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually?** 
 **Why or why not?**
+<br>
 According to the Total Summary figure, the current manufacturing data meets the 100 pounds per square inch limit in total variance. However, in the Lot Summary figure, it is clear that lot 3 far exceeds the limit. The average of the 3 lots makes it seem that all are meeting the design specification, but that is not the case in reality.
 
 
@@ -73,38 +74,38 @@ According to the Total Summary figure, the current manufacturing data meets the 
 </p>
 The t-test for Lot 1 indicates the following: the p-value = 1, this markedly greater than the 0.05 significance level. The p-value is greater than the significance level, which means that there is not enough evidence to reject the null hypothesis.
 
-
+<br>
 **- Lot 2 T-Test**
 <p align="center">
     <img src="https://github.com/saraegregg/Mod15_R-Analysis/blob/main/images/del3.2.png"> 
 </p>
 The t-test for Lot 2 indicates the following: the p-value = 0.6072, this greater than the 0.05 significance level. The p-value is greater than the significance level, and this indicates that there is not enough evidence to reject the null hypothesis.
 
-
+<br>
 **- Lot 3 T-Test**
 <p align="center">
     <img src="https://github.com/saraegregg/Mod15_R-Analysis/blob/main/images/del3.3.png"> 
 </p>
 The t-test for Lot 3 indicates the following: the p-value = 0.04168, this less than the 0.05 significance level. Since the p-value is lower than the significance level, and this indicates that there is enough evidence to reject the null hypothesis.
 
-
+<br>
 **- T-Test Across All Manufacturing Lots** 
 <p align="center">
     <img src="https://github.com/saraegregg/Mod15_R-Analysis/blob/main/images/del3.4.png"> 
 </p>
-<br>
+
 The t-test for the total of all lots indicates the following: the p-value = 0.06, this greater than the 0.05 significance level. The p-value is greater than the significance level, and this indicates that there is not enough evidence to reject the null hypothesis.
 
 ### Study Design: MechaCar vs Competition
 
 **What metric or metrics are you going to test?**
 
-With inflation, rising gas prices, and increasingly dire predictions by climate scientists, a vehicle's cost and fuel efficiency are prime factors that car manufacturers, consumers, and governments consider.
+With inflation, rising gas prices, and increasingly dire predictions by climate scientists, a vehicle's cost and fuel efficiency are prime factors that car manufacturers, consumers, and even governments consider when participating in and regulating the car industry in the United States.
 
 **What is the null hypothesis or alternative hypothesis?**
 
 Hypothesis: Regardless of the luxury features and style of vehicles being marketed to American consumers, future buying decisions can reliably be predicted by a combination of vehicle cost and city fuel efficiency.
-Null Hypothesis: There is no statistically significant correlation between the number of vehicles sold in a given year and vehicle model, and that model's cost or city fuel efficiency.
+Null Hypothesis: There is no statistically significant correlation between the number of vehicles sold in a given year of a particular model, and that model's cost or city fuel efficiency.
 
 **What statistical test would you use to test the hypothesis? And why?**
 
@@ -116,6 +117,6 @@ To test the hypothesis, the following tests would need to be performed:
 **What data is needed to run the statistical test?**
 
 The data that would be needed would be:
-- the total vehicles sold grouped by model for the previous year. To limit the dataset MechaCars may want to look at only vehicle classes comprable to their models.
+- the number of total vehicles sold grouped by model for the previous year. To limit the dataset AutosRUs may want to look at only vehicle classes comprable to the MechaCar.
 - the city fuel efficiency ratings of each model of vehicle
 - the cost or sales price of each model sold
